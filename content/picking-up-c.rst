@@ -46,7 +46,7 @@ more than makes up for it.
 
 Instead of doing:
 
-::
+.. code-block:: c#
 
     private string name;
     public string Name {
@@ -60,7 +60,7 @@ Instead of doing:
 
 We can just do:
 
-::
+.. code-block:: c#
 
     public string Name { get; set; }
 
@@ -68,7 +68,7 @@ We can just do:
 
 Instead of doing:
 
-::
+.. code-block:: c#
 
     Customer c = new Customer();
     c.CustomerID = "ABC123";
@@ -76,13 +76,13 @@ Instead of doing:
 
 We can just do:
 
-::
+.. code-block:: c#
 
     Customer c= new Customer() { CustomerID = "ABC123", CustomerName = "Mike" };
 
 **Collection Intiailizers**
 
-::
+.. code-block:: c#
 
     List<Customer> clist = new List<Customer>() {
         new Customer { CustomerID = "ABC123", ... },
@@ -94,13 +94,13 @@ We can just do:
 
 Instead of doing:
 
-::
+.. code-block:: c#
 
     List<Customer> clist = new List<Customer>();
 
 We can just do:
 
-::
+.. code-block:: c#
 
     var clist = new List<Customer>();
 

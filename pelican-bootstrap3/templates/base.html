@@ -78,7 +78,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="{{ SITEURL }}" class="navbar-brand">{{ SITENAME }}</a>
+            <a href="{% if SITE_URL %}{{ SITEURL }}{% else %}/{% endif %}" class="navbar-brand">{{ SITENAME }}</a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
@@ -120,13 +120,12 @@
 
 <!-- AddThis Smart Layers BEGIN -->
 <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+<!--
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4da25a01606d9451"></script>
 <script type="text/javascript">
   addthis.layers({
     'theme' : 'transparent',
     'share' : {
-      'position' : 'left',
-      'numPreferredServices' : 5
     }, 
     'follow' : {
       'services' : [
@@ -137,6 +136,7 @@
     'whatsnext' : {}  
   });
 </script>
+-->
 <!-- AddThis Smart Layers END -->
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->

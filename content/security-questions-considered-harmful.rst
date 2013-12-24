@@ -43,7 +43,7 @@ following method:
 That's it. Let's try it with the question, \ *What was the make & model
 of your first car?*
 
-`Edmunds provides`_ a list of the 50 most popular make-model
+`Edmunds`_ provides a list of the 50 most popular make-model
 combinations. I have no idea how it calculated that, but let's assume
 it's correct for the demographics of our victim base. We take 50, and
 calculate log(50) in base 2. We can do that easily by searching Google
@@ -141,7 +141,7 @@ make the process a bit safer.
 -  Technology Review: \ `Are Your "Secret Questions" Too Easily
    Answered?`_, May 2009
 
-.. _Edmunds provides: http://www.edmunds.com/reviews/list/mostpopular/
+.. _Edmunds: http://www.edmunds.com/reviews/list/mostpopular/
 .. _log(50)/log(2): http://www.google.com/search?q=log%2850%29/log%282%29
 .. _her Wikipedia page: http://en.wikipedia.org/wiki/Sarah_Palin
 .. _Secret Questions: http://www.schneier.com/blog/archives/2009/05/secret_question.html

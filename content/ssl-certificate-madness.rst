@@ -16,13 +16,17 @@ you're starting out with just a PEM-encoded key and certificate file.
 
 **Step 1: Create a key file**
 
-openssl genrsa -aes256 -passout “pass:foobar" -out server.key 2048
+.. code-block:: bash
+
+	openssl genrsa -aes256 -passout “pass:foobar" -out server.key 2048
 
 This creates a 2048-bit key, encrypted with AES-256 using the password
 “foobar". If you don't want to use a password at all, you can leave
 those out, and just have:
 
-openssl genrsa -out server.key 2048
+.. code-block:: bash
+
+	openssl genrsa -out server.key 2048
 
 You really want to use a 2048-bit key instead of the older 1024-bit
 keys. Besides being much stronger, most certificate authorities will no
@@ -30,7 +34,9 @@ longer create certificates based off of 1024-bit keys.
 
 **Step 2: Create a Certificate Signing Request (CSR)**
 
-openssl req -new -key server.key -out server.csr
+.. code-block:: bash
+
+	openssl req -new -key server.key -out server.csr
 
 This command creates a new CSR based off an existing key. You'll be
 prompted for the key password you created in Step #1 and for details of
@@ -62,8 +68,9 @@ links that might help:
 
 **Step #4: Create a PKCS12 archive.**
 
-openssl pkcs12 -export -chain -CAfile intermediate.crt -in server.crt
--inkey server.key -out server.p12
+.. code-block:: bash
+	
+	openssl pkcs12 -export -chain -CAfile intermediate.crt -in server.crt -inkey server.key -out server.p12
 
 This command takes the three files you now have and combines them into a
 single file, which can be imported into IIS, Apache Tomcat, or
@@ -76,7 +83,12 @@ used to create the key in Step #1.
 You can configure J-Boss by editing the
 server/default/deploy/jboss-web.deployer/server.xml and
 
-``<Connector port="8443" protocol="HTTP/1.1" SSLEnabled="true" maxThreads="150" scheme="https" secure="true" clientAuth="false" sslProtocol="TLS" keystoreFile="${jboss.server.home.dir}/conf/server.p12" keystorePass="keystorePassword" keystoreType="pkcs12"/>``
+.. code-block:: xml
+
+	<Connector port="8443" protocol="HTTP/1.1" SSLEnabled="true" maxThreads="150" 
+			   scheme="https" secure="true" clientAuth="false" sslProtocol="TLS" 
+			   keystoreFile="${jboss.server.home.dir}/conf/server.p12" 
+			   keystorePass="keystorePassword" keystoreType="pkcs12"/>
 
 The keystoreType="pkcs12" line is very important, and you may need to
 un-comment this section from the configuration file.
@@ -86,14 +98,22 @@ un-comment this section from the configuration file.
 Apache Tomcat is similar to J-Boss, and the configuration is almost
 identical. In the $CATALINA\_BASE/conf/server.xml file:
 
-``<Connector port="8443" maxThreads="150" scheme="https" secure="true" SSLEnabled="true" sslProtocol="TLS" keystoreFile="conf/server.p12" keystorePass="keystorePassword" keystoreType="pkcs12"/>``
+.. code-block:: xml
+
+	<Connector port="8443" maxThreads="150" scheme="https" secure="true"
+			   SSLEnabled="true" sslProtocol="TLS" keystoreFile="conf/server.p12" 
+			   keystorePass="keystorePassword" keystoreType="pkcs12"/>``
 
 Please note that you don't have to use a PKCS12 file with Apache
 Tomcat. \ `Apache Tomcat 7`_ supports JKS (legacy), PKCS11 (Apache) and
 PKCS12 (what we did above) formats. If you want to use PKCS11, you can
 just use:
 
-``<Connector port="8443" maxThreads="150" scheme="https" secure="true" SSLEnabled="true" sslProtocol="TLS" SSLCertificateFile="conf/server.crt" SSLCertificateKeyFile="conf/server.key" SSLPassword="<your-key-password>" />``
+.. code-block:: xml
+
+	<Connector port="8443" maxThreads="150" scheme="https" secure="true"
+			   SSLEnabled="true" sslProtocol="TLS" SSLCertificateFile="conf/server.crt"
+			   SSLCertificateKeyFile="conf/server.key" SSLPassword="<your-key-password>" />``
 
 **Step #5c: Configuring IIS**
 

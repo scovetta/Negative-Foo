@@ -6,4 +6,8 @@ John Cleese on Creativity
 :tags: creativity, humor
 :slug: john-cleese-on-creativity
 
-http://www.youtube.com/watch?v=VShmtsLhkQg
+
+.. embed:: AU5x1Ea7NjQ
+    :type: youtube
+    :align: center
+

@@ -14,30 +14,51 @@ Microsoft Windows
 To flush your DNS cache within Windows, open a command prompt and run
 the following command:
 
-``ipconfig /flushdns``
+::
+
+	C:\> ipconfig /flushdns
 
 Linux
 ~~~~~
 
 To flush DNS cache within Linux, you can restart the ncsd daemon, which
-could be done in any of the following ways. (It depends on your specific
-Linux distribution.)
+could be done in any of the following ways. It depends on your specific
+Linux distribution. 
 
-``sudo /etc/init.d/nscd reload sudo /etc/rc.d/init.d/nscd reload sudo service nscd reload``
+Reference: http://www.cyberciti.biz/faq/rhel-debian-ubuntu-flush-clear-dns-cache/
 
-If you don't have nscd installed, you can install it by doing one of the
-following:
+::
 
-``apt-get install nscd yum install nscd``
+	$ sudo /etc/init.d/nscd reload 
+	$ sudo /etc/rc.d/init.d/nscd reload
+	$ sudo service nscd reload
+
+If you're using dnsmasq, you can restart that process as well:
+
+::
+
+	$ sudo /etc/init.d/dnsmasq restart
+	# service dnsmasq restart
 
 If you're using Bind, you can flush the daemon's cache by doing:
 
-``sudo rndc flush``
+::
+	
+	# /etc/init.d/named restart
+	# rndc restart
+	# rndc exec
+	$ sudo rndc flush
 
 Mac OSX
 ~~~~~~~
 
-You can flush your DNS cache by using either the lookupd or the
-dscacheutil command, depending on your version of OSX:
+You can flush your DNS cache by using either the dscacheutil command
+or by restarting the mDNSResponder process, depending on your version
+of OS X. 
 
-``lookupd -flushcache     ; Leopard dscacheutil -flushcache    ; Snow Lepoard and Lion``
+Reference: http://randomerrata.com/post/45487345023/clear-dns-cache
+
+::
+
+	sudo dscacheutil -flushcache       ; Leopard & Snow Lepoard
+	sudo killall -HUP mDNSResponder    ; Lion & Mountain Lion

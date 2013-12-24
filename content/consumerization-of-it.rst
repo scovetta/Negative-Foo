@@ -6,7 +6,9 @@ Consumerization of IT
 :tags: coit, trends
 :slug: consumerization-of-it
 
-|IBM PC XT|\ Long ago, while many of you were perhaps in school,
+|IBM PC XT|
+
+Long ago, while many of you were perhaps in school,
 corporate workers would arrive at the office and use leading-edge
 technology (e.g. mainframes, personal computers, pagers, photocopiers,
 “laser” printers)—technology that was far superior to anything they had
@@ -50,14 +52,11 @@ likely to put in the extra time and effort to make whatever I am doing
 at work successful.
 
 This is really important. It’s why Google gives their employees really
-good equipment, even if it’s not an Android device (*`Are you listening,
-Microsoft?`_)*
+good equipment, even if it’s not an Android device.
 
 What kind of equipment do you use at work? Do you have better equipment
 at home? I’d love to hear your thoughts.
 
 .. _Marc LeShay: http://www.linkedin.com/in/LeShay
-.. _Are you listening, Microsoft?: http://www.zdnet.com/blog/microsoft/microsoft-banning-mac-ipad-purchases-by-its-sales-and-marketing-group/12221
-
 .. |IBM PC XT| image:: http://negativefoo.org/wp-content/uploads/2012/10/ibm5150-300x219.jpeg
    :target: http://negativefoo.org/2012/10/consumerization-of-it/ibm5150/

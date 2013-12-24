@@ -24,6 +24,24 @@ quality content. In this issue:
 
 `Read Issue #38`_  (`archived issues`_)
 
+Archived Issues:
+
+- `Issue #40 <http://www.net-security.org/dl/insecure/INSECURE-Mag-40.pdf>`_ - Exposing Malware
+- `Issue #39 <http://www.net-security.org/dl/insecure/INSECURE-Mag-39.pdf>`_ - Insights from Information Security Leaders
+- `Issue #38 <http://www.net-security.org/dl/insecure/INSECURE-Mag-38.pdf>`_ - Fornsics, UEFI Secure Boot
+- `Issue #37 <http://www.net-security.org/dl/insecure/INSECURE-Mag-37.pdf>`_ - Becoming a Malware Analyst
+
+
+.. code-block:: c
+
+    #include <stdio.h>
+
+    int main(void) {
+        printf("Hello, world!\n");
+        return 0;
+    }
+
+
 `Sign up for their newsletter`_
 
 .. _Read Issue #38: http://www.net-security.org/dl/insecure/INSECURE-Mag-38.pdf

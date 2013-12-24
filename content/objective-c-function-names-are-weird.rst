@@ -8,30 +8,30 @@ Objective C Function Names Are Weird
 It took me a while before I "got it", but Objective C function names
 aren't like names in other languages:
 
-::
+.. code-block:: javascript
 
     function changeHeadlight(car, side) {
-    ...
+        ...
     }
 
 In JavaScript, the function name is changeHeadlight. It takes two
 parameters, car and side. These parameters can be of any time (and are
 optional, in fact).
 
-::
+.. code-block:: java
 
     public void changeHeadlight(Vehicle car, int side) {
-    ...
+        ...
     }
 
 Similarly in Java, the function name is changeHeadlight. It takes two
 parameters, car and side, but neither are optional and both are strongly
 typed. Now let's take an Objective-C function:
 
-::
+.. code-block:: objective-c
 
     - (void)changeHeadlight:(Vehicle *)car forSide:(int)side {
-    ...
+        ...
     }
 
 What always confused me was, what is the purpose of "forSide"? It seems
@@ -54,15 +54,15 @@ I still don't understand why this is necessary, it seems much simpler to
 just identify the function uniquely by the function name and parameter
 types.
 
-::
+.. code-block:: java
 
     void addNumbers(int x, int y)
 
 In the case above, the full function name is "addNumbers(int, int)".
 Perhaps in Objective C you could have two functions with the same
-initial name and same parameters?
+initial name and same parameter types?
 
-::
+.. code-block:: objective-c
 
     -(void) performOperation:(int)x addedTo:(int)y
     -(void) performOperation:(int)x subtractedFrom:(int)y

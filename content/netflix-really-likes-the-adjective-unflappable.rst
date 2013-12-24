@@ -25,12 +25,15 @@ So who does Netflix think is unflappable?
 -  `Laura Bush`_
 -  `Sherlock Holmes`_
 
-In short:
+In short, I don't think that word means what you think it means.
 
-| 
-| 
-|  I don't think that word means what you think it means.
-| 
+.. html::
+
+	<audio controls="controls"><br>
+	  <source src="http://negativefoo.org/wp-content/uploads/2012/11/thatword.mp3" type="audio/mpeg"><br>
+	  I don’t think that word means what you think it means.<br>
+	</audio>
+
 
 .. _The Free Dictionary: http://www.thefreedictionary.com/unflappable
 .. _Wallace & Gromit in There Amazing Adventures: http://movies.netflix.com/WiMovie/Wallace_Gromit_in_Three_Amazing_Adventures/70212572

@@ -6,5 +6,7 @@ How to Design a Good API and Why It Matters
 :tags: api, architecture
 :slug: how-to-design-a-good-api-and-why-it-matters
 
-[slideshare
-id=121808&doc=how-to-design-a-good-a-p-i-and-why-it-matters-g-o-o-g-l-e4460]
+
+.. embed:: 121808
+    :type: slideshare
+

@@ -5,7 +5,7 @@
                 <li class="list-group-item"><h4><i class="icon-home icon-large"></i>Social</h4></li>
                 {% for name, link in SOCIAL %}
                     <li class="list-group-item"><a href="{{ link }}"><i
-                            class="icon-{{ name }}-sign icon-large"></i>{{ name }}
+                            class="icon-{{ name|lower }}-sign icon-large"></i>{{ name }}
                     </a></li>
                 {% endfor %}
             {% endif %}

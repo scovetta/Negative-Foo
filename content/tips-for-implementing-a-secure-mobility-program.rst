@@ -6,8 +6,10 @@ Tips for Implementing a Secure Mobility Program
 :tags: ciso, mobility, security
 :slug: tips-for-implementing-a-secure-mobility-program
 
-|image0|\ *This article appears in the `November 2012`_ issue of SC
-Magazine.*
+|image0|
+
+This article appears in the `November 2012 <http://www.scmagazine.com/issuearchive/>`_ issue of SC
+Magazine.
 
 As we approach the end of 2012, nearly all large enterprises have at
 least partially adopted smartphones and tablets for business purposes
@@ -75,7 +77,6 @@ of a comprehensive MDM solution and a secure mobile development program
 can significantly reduce the risk inherent in these powerful mobile
 devices and help your organization to realize their benefits.
 
-.. _November 2012: http://www.scmagazine.com/issuearchive/
 .. _1: http://bit.ly/Bwtmrd
 .. _2: http://bit.ly/Ptdmbm
 .. _3: http://bit.ly/Tkmbdq

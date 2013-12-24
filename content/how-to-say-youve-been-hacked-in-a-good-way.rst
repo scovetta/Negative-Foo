@@ -6,8 +6,13 @@ How to Say You've Been Hacked... in a Good Way
 :tags: data breach, sony, TEDxBigApple, zappos
 :slug: how-to-say-youve-been-hacked-in-a-good-way
 
-|image0|\ I received an e-mail from TEDxBigApple this morning that
-started with the line:
+
+.. image:: http://negativefoo.org/wp-content/uploads/2012/02/tedxbigapple291.png
+   :align: right
+
+
+I received an e-mail from TEDxBigApple this morning that
+started with the line
 
 **We've been hacked!**
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -25,9 +30,6 @@ No, no. They were hacked.
     sent out an invitation to join a site called biapplepulse.com.
 
 Wait, what?
-
-[youtube\_sc url="AcvDgZI91SU" title="YouTube%20Video%20Player"
-modestbranding="1" hd="1"]
 
 Ok, so it's not incompetence anymore, but **poetic justice; hacking** is
 now\ **being pranked**, and\ **criminals**\ are just a\ **Disruptive
@@ -118,12 +120,14 @@ I received the following, totally unhelpful response.
     As always, please remember that Zappos.com will never ask you for
     personal or account information in an e-mail.
 
-    | To stay up-to-date on all current information regarding this
+    To stay up-to-date on all current information regarding this
     situation, please see:
-    |  www.zappos.com/passwordchange
+    
+    www.zappos.com/passwordchange
 
-    | Sincerely,
-    |  The Zappos.com Customer Loyalty Team
+    Sincerely,
+    
+    The Zappos.com Customer Loyalty Team
 
 Not surprisingly, nothing new has been posted to the link above since
 January 20th.
@@ -141,6 +145,7 @@ direction:
    programs. If Sony knew they would have had to pay $250 to each
    customer lost, for each of the 75 million records lost, don't you
    think they would have invested a bit more in their security program?
+
 -  **Loss of Customers.** Hardly a day goes by when some company needs
    to alert customers of a data breach. Familiarity breeds apathy in
    this regard, and the outrage that followed the CardSystems and TJ
@@ -152,12 +157,10 @@ direction:
 I've included the full text of the e-mail received from TEDxBigApple.
 
     **Apologies from TEDxBigApple...**
-
-    | 
-    |  **We've been hacked!**
-
-    | 
-    |  As you know, Feb 4th was centered around Disruptive Ideas, and as
+ 
+    **We've been hacked!**
+ 
+    As you know, Feb 4th was centered around Disruptive Ideas, and as
     poetic justice would have it, our success means we have been
     unfortunately pranked by a Disruptive force. Someone or someones
     surreptitiously gained access to our registered database and has
@@ -168,20 +171,14 @@ I've included the full text of the e-mail received from TEDxBigApple.
     coming from an address ending with @bigapplepulse.com, but that is
     entirely up to you.
 
-     
-
     All information pertaining to TEDxBigApple will come from
     info@tedxbigapple.com and noone else. If you receive any messages
     from third parties please feel free to inform us and we will
     investigate the source of the problem.
 
-     
-
     We hope that you have been enjoying seeing some photos of the event,
     and we are working hard to bring you all the videos by the end of
     next week!
-
-     
 
     In the meantime if you would like to be removed from our email list
     we will be sad, but of course respect your wishes. Your information
@@ -190,8 +187,6 @@ I've included the full text of the e-mail received from TEDxBigApple.
 
     Let's strengthen the innovation community together.
 
-    | Warmly,
-    |  -TEDxBigApple Team
+    Warmly,
+     -TEDxBigApple Team
 
-.. |image0| image:: http://negativefoo.org/wp-content/uploads/2012/02/tedxbigapple291.png
-   :target: http://negativefoo.org/2012/02/how-to-say-youve-been-hacked-in-a-good-way/tedxbigapple291-2/

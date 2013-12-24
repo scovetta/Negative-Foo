@@ -63,6 +63,10 @@ a, a:hover {
     color: #0000aa;
 }
 
+aside a:hover {
+    text-decoration: none;
+}
+
 .entry-content img {
     max-width: 100%;
     height: auto;
@@ -77,6 +81,10 @@ a, a:hover {
     list-style: none;
     padding: 0;
     margin-left: 0;
+}
+#sidebar ul li i,
+#sidebar h4 {
+    color: #666;
 }
 
 .docutils.footnote td.label {
@@ -93,10 +101,23 @@ a, a:hover {
 code, pre, .literal-block {
     font-family: 'PT Mono', monospace;
 }
+table.highlighttable td.code {
+    width: 100%;
+}
 
 ul {
     padding-left: 20px;
 }
 ul li {
     list-style-type: square;
+}
+
+img.align-right {
+    float: right;
+}
+
+blockquote p {
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
 }

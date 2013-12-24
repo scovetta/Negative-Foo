@@ -18,7 +18,7 @@ TRANSLATION_FEED_ATOM = None
 DISPLAY_CATEGORIES_ON_MENU = False
 
 PLUGIN_PATH = "plugins"
-PLUGINS = ['html_rst_directive']
+PLUGINS = ['html_rst_directive', 'pelican_embed']
 
 # Blogroll
 LINKS =  (('Pelican', 'http://getpelican.com/'),
@@ -35,13 +35,13 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-THEME = '/Users/scovetta/Projects/negativefoo/pelican-bootstrap3/'
+THEME = './pelican-bootstrap3/'
 TYPOGRIFY = True
 
 # code blocks with line numbers
 PYGMENTS_RST_OPTIONS = {'linenos': 'table'}
 
-DISQUS_SITENAME = 'negativefoo'
+# DISQUS_SITENAME = 'negativefoo'
 GITHUB_URL = 'http://github.com/scovetta'
 TWITTER_USERNAME = 'scovetta'
 
@@ -50,3 +50,6 @@ TAG_CLOUD_STEPS = 4
 TAG_CLOUD_MAX_ITEMS = 20
 
 SUMMARY_MAX_LENGTH = None
+
+#ADDTHIS_PROFILE = 'ra-4da25a01606d9451'
+#GOOGLE_ANALYTICS = 'UA-27097445-1'

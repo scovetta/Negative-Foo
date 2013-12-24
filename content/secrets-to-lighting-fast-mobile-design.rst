@@ -8,8 +8,10 @@ Secrets to Lighting Fast Mobile Design
 
 A great presentation from Instagram.
 
-[embed
-width="100%"]http://speakerd.s3.amazonaws.com/presentations/4ede6e9cad0da6004d000175/mike-krieger-secrets-to-lightning-fast-design-v2-1.pdf[/embed]
+
+
+.. embed:: http://speakerd.s3.amazonaws.com/presentations/4ede6e9cad0da6004d000175/mike-krieger-secrets-to-lightning-fast-design-v2-1.pdf
+    :type: pdf
 
 Original source:
 http://speakerdeck.com/u/mikeyk/p/secrets-to-lightning-fast-mobile-design

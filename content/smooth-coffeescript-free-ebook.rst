@@ -6,5 +6,7 @@ Smooth CoffeeScript (Free eBook)
 :tags: development
 :slug: smooth-coffeescript-free-ebook
 
-[slideshare
-id=10865948&doc=smoothcoffeescriptweboptimized-120107070406-phpapp01&type=d]
+.. embed:: 10865948
+    :type: slideshare
+    :align: center
+
